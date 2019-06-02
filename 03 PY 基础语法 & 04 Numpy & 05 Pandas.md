@@ -1,22 +1,22 @@
 > 相信绝大多数学习此课程的朋友和我一样都是有一定 Python 使用基础的，所以这一部分完全是提纲挈领式地带过了，推荐有需要的小伙伴通过其他途径学习基础语法
 
 # python 基础语法：
-	1. 版本选择：2.7.x 目前在商业项目中仍是主流，不可忽略；如果可能的话尽量选择 3.x，因为前者到 2020 年就不再有人维护了
-	2. IDE推荐：个人首推 Jupyter NoteBook；PyCharm 适合项目开发，Sublime Text 轻便快速（还好看），Vim 是大佬专属的武器，  
-	Eclipse+PyDev 适合使用过 Java 的朋友
-	3. 输入与输出：raw_input (2.7）或 input (3.x）；print()，有传统的 % 式，3.x 新出的 format 式以及最新的 f-string 式，  
-	自个了解下即可，个人首推第二种
-	4. 判断语句：if, elif, else
-	5. 循环语句：for, while；break, continue；注意 range 的用法
-	6. 数据类型：tuple, list, dict, set；进阶的有 namedTuple, defaultdict 等，可在 collections 中导入
-	7. 注释语句：# 用于短语句，较长的注释一般会用 '''''' 或 """""" （其实也就是长字符串）；  
-	代码文件首行有时会出现 # --coding: utf-8 - 之类的语句，各有作用，比如这句是指定了注释内容编码方式为 utf-8，适用于有中文注释的情况
-	8. 引用模块：import; from …(package) import …/*(module，* 表示引入 package 中所有 module)，有多个的话用逗号隔开；  
-	一般 from 后边跟着的是 package，而 import 后边跟着的是 module——实际上是直接引用一个 .py 文件或通过其他方法间接引用 .py 文件。  
-	因此这种从 package 中 import module 的方法实际上是从一个目录中引用某个 module，也要求目录结构中添加有 __init__.py 文件，可以参考下 sklearn 的源码结构
-	9. 函数：长函数用 def, 短函数用 lambda；函数中有嵌套、闭包、修饰等用法；如果在函数中用到全局变量，需用 global 关键词来声明；  
-	如果在嵌套函数中用到上一层的函数变量，则用的是 nonlocal 而非 global
-	10. 练习平台建议：leetcode 比较初级，Kaggle/天池 很有实战性，各种 ACM Online Judge 是比较高阶的玩法
+1. 版本选择：2.7.x 目前在商业项目中仍是主流，不可忽略；如果可能的话尽量选择 3.x，因为前者到 2020 年就不再有人维护了
+2. IDE推荐：个人首推 Jupyter NoteBook；PyCharm 适合项目开发，Sublime Text 轻便快速（还好看），Vim 是大佬专属的武器，  
+Eclipse+PyDev 适合使用过 Java 的朋友
+3. 输入与输出：raw_input (2.7）或 input (3.x）；print()，有传统的 % 式，3.x 新出的 format 式以及最新的 f-string 式，  
+自个了解下即可，个人首推第二种
+4. 判断语句：if, elif, else
+5. 循环语句：for, while；break, continue；注意 range 的用法
+6. 数据类型：tuple, list, dict, set；进阶的有 namedTuple, defaultdict 等，可在 collections 中导入
+7. 注释语句：# 用于短语句，较长的注释一般会用 '''''' 或 """""" （其实也就是长字符串）；  
+代码文件首行有时会出现 # --coding: utf-8 - 之类的语句，各有作用，比如这句是指定了注释内容编码方式为 utf-8，适用于有中文注释的情况
+8. 引用模块：import; from …(package) import …/*(module，* 表示引入 package 中所有 module)，有多个的话用逗号隔开；  
+一般 from 后边跟着的是 package，而 import 后边跟着的是 module——实际上是直接引用一个 .py 文件或通过其他方法间接引用 .py 文件。  
+因此这种从 package 中 import module 的方法实际上是从一个目录中引用某个 module，也要求目录结构中添加有 __init__.py 文件，可以参考下 sklearn 的源码结构
+9. 函数：长函数用 def, 短函数用 lambda；函数中有嵌套、闭包、修饰等用法；如果在函数中用到全局变量，需用 global 关键词来声明；  
+如果在嵌套函数中用到上一层的函数变量，则用的是 nonlocal 而非 global
+10. 练习平台建议：leetcode 比较初级，Kaggle/天池 很有实战性，各种 ACM Online Judge 是比较高阶的玩法
 
 # Numpy
 	1. 推荐理由：
