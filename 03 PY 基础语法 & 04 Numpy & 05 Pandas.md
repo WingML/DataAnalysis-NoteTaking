@@ -45,7 +45,7 @@ Eclipse+PyDev 适合使用过 Java 的朋友
 	d. 排序：np.sort(a, axis, kind, order)（支持快速排序，归并排序与堆排序）
 4. 思考题：用 Numpy 统计下表 5 名学员在 3 门学科中的 平均成绩，最小成绩，最大成绩，方差，标准差，将按总分排序  
 ![04](https://raw.githubusercontent.com/WingML/DataAnalysis-NoteTaking/master/pictures/04.jpg)  
-	
+	```python
 	import numpy as np
 
 	mytype = np.dtype({'names': ('name', 'Chinese', 'English', 'Math'), 
@@ -93,7 +93,7 @@ Eclipse+PyDev 适合使用过 Java 的朋友
 	print('\nRanking')
 	for i, person in enumerate(ranking_grade):
 	    print(i + 1, person)
-	
+	```
 # Pandas
 1. 推荐理由：
 	a. 其基础的数据结构与 json 契合度很高，方便转换。
@@ -135,7 +135,7 @@ Eclipse+PyDev 适合使用过 Java 的朋友
 	这里定义了一个匿名函数，而 sqldf 中的 globals() 是指传入全局参数，因为笔者此处用到的 df 为全局变量。
 6. 思考题：对下表使用 Pandas 进行创建与数据清洗，并新增一列“总和”计算每个学员的总成绩  
 ![05](https://raw.githubusercontent.com/WingML/DataAnalysis-NoteTaking/master/pictures/05.png)
-	
+	```python
 	import pandas as pd
 
 	# data building
@@ -157,3 +157,4 @@ Eclipse+PyDev 适合使用过 Java 的朋友
 	# sum up and sort by total scores
 	df['Total'] = df.sum(axis=1)
 	df.sort_values(by='Total', ascending=False)
+	```
